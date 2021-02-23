@@ -1,0 +1,17 @@
+<nav>
+    <div class="nav__logo">
+        <img src="../../../assets/images/logo.png" alt="dicelLogo" class="nav__logo" />
+    </div>
+    <ul class="nav__links" [ngClass]="{'nav__active': active===true}">
+        <li class="nav__links--active"><a href="">Home</a></li>
+        <li><a href="">Identidad</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Galeria</a></li>
+        <li><a href="">Contacto</a></li>
+    </ul>
+    <div class="burger" (click)="active = !active">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
